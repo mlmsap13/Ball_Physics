@@ -48,8 +48,8 @@ function Ball(x,y){
   	this.acceleration.add(f);
 };
   Ball.prototype.display = function(){
-	fill(this.c, 100, 100);
 	noStroke;
+	fill(this.c, 100, 100);
 	ellipse(this.position.x, this.position.y, this.r*2, this.r*2)
 };
   Ball.prototype.gravity = function() {
